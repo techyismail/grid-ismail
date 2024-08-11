@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: 5% 15% 15% 15% 15% 25% 5% 5% 5%;
+    grid-template-rows:80vh 2vw 35vw 2vw 2vw 2vw  ;
+    grid-template-areas:
+        "nav main  main  main  main main realtors realtors realtors"
+        "nav . services services services services services services ."
+        "nav goals goals goals goals story story story story"
+        "nav . homes homes homes homes homes homes ."
+        "nav gallery gallery gallery gallery gallery gallery gallery gallery"
+        "nav footer footer footer footer footer footer footer footer";
+} 
+.navbar{
+    grid-area:nav;
+    background-color:#a68052;
+    justify-content:center;
+    display:grid;
+}
+.nav-img{
+    width: 3vw;
+    justify-self:center;
+}
+.main{
+    grid-area: main;
+ background-image: url(./hero.jpeg);
+ background-color: rgba(0,0,0,0);
+ background-blend-mode: multiply;
+ display: grid;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#main-logo{
+    width: 7vw;
+    justify-self: center;
+    margin-top: 5%;
+}
+#partners{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 10fr);
+    justify-content: baseline;
+}
+.seen_on img{
+    width: ;
+    justify-content: ;
+}
